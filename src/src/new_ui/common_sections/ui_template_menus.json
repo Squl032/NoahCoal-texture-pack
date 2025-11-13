@@ -1,0 +1,20 @@
+{
+  "namespace": "common_menus_dx",
+
+  /*//// 菜單滑動模板 ////*/
+
+  "java_scroll_box": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "layer": 10,
+    "texture": "textures/ui/menus/java_scroll_box"
+  },
+
+  "java_scroll_track": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui/menus/java_scroll_track"
+  }
+}

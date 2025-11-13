@@ -126,7 +126,7 @@
     "ui/portfolio_screen.json",
     "ui/post_rating_screen.json",
     "ui/profile_screen.json",
-    "ui/progress_screen.json",
+   //"ui/progress_screen.json" :we incounter abit problem with the screen that supposed to show download panel 
     "ui/rating_prompt.json",
     "ui/realms_common.json",
     "ui/realms_create.json",
