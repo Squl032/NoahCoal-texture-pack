@@ -1,0 +1,404 @@
+{
+    "namespace": "bui_start",
+
+    "skin_view": {
+        "layer": 15,
+        "type": "input_panel",    
+        "size": [ "45%", "45%" ],
+        "offset": [0, "8.75%"],
+        "tts_ignore_count": true,
+        "button_mappings": [
+        {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "button.turn_doll",
+            "mapping_type": "pressed"
+        }
+        ],
+        "controls": [
+        {
+            "paper_doll_panel": {
+            "type": "panel",
+            "size": [ "100%", "100%" ],
+            "animation_reset_name": "screen_animation_reset",
+            "anims": [
+                "@anim.screen_exit_animation_push_down",
+                "@anim.screen_exit_animation_pop_down",
+                "@anim.screen_exit_size_animation_push",
+                "@anim.screen_exit_size_animation_pop",
+                "@anim.screen_entrance_animation_push_down",
+                "@anim.screen_entrance_animation_pop_down",
+                "@anim.screen_entrance_size_animation_push",
+                "@anim.screen_entrance_size_animation_pop"
+            ],
+            "controls": [
+                {
+                "paper_doll": {
+                    "type": "custom",
+                    "renderer": "paper_doll_renderer",
+                    "size": [ "100%", "100%" ],
+                    "layer": 0,
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "rotation": "gesture_x",
+                    "offset": [ 0, "-25%" ]
+                }
+                }
+            ]
+            }
+        },
+        {
+        "paper_doll_name_tag": {
+            "type": "custom",
+            "renderer": "name_tag_renderer",
+            "layer": 15,
+            "anchor_from": "top_middle",
+            "anchor_to": "bottom_middle",
+            "size": [ 8, 8 ],
+            "animation_reset_name": "screen_animation_reset",
+            "anims": [
+                "@anim.screen_exit_animation_push_down",
+                "@anim.screen_exit_animation_pop_down",
+                "@anim.screen_entrance_animation_push_down",
+                "@anim.screen_entrance_animation_pop_down"
+            ],
+            "bindings": [
+                {
+                "binding_name": "#playername"
+                }
+            ]
+            }
+        }
+        ]
+    },
+
+    "ver": {
+        "type": "panel",
+        "animation_reset_name": "screen_animation_reset",
+        "anims": [
+        "@anim.screen_exit_animation_push_down",
+        "@anim.screen_exit_animation_pop_down",
+        "@anim.screen_entrance_animation_push_down",
+        "@anim.screen_entrance_animation_pop_down"
+        ],
+        "controls": [
+        {
+            "version": {
+            "type": "label",
+            "layer": 515,
+            "text": "#version",
+            "size": [ "default", 10 ],
+            "offset": [ -5 , -5 ],
+            "max_size": [ "100%", "100%" ],
+            "anchor_from": "bottom_right",
+            "anchor_to": "bottom_right",
+            "bindings": [
+                {
+                "binding_name": "#version"
+                }
+            ]
+            }
+        }
+        ]
+    },
+
+  "bui": {
+    "type": "panel",
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@anim.screen_exit_animation_push_down",
+      "@anim.screen_exit_animation_pop_down",
+      "@anim.screen_entrance_animation_push_down",
+      "@anim.screen_entrance_animation_pop_down"
+    ],
+    "controls": [
+      {
+        "iui": {
+          "type": "label",
+          "layer": 515,
+          "text": "§g§lNoahCoal §dV12",
+          "size": [ "default", 10 ],
+          "offset": [ 5,-5 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      }
+    ]
+  },
+
+    "play_button@start.main_button": {
+        "$pressed_button_name": "$play_button_target",
+        "$button_text": "menu.play",
+        "$focus_override_right": "profile_button",
+        "default_focus_precedence": 1,
+        "size": [ "20%", "10%"],
+        "offset": [ 0, "30%"],
+        "layer": 16
+    },
+
+    "gamerpic_bui": {
+        "type": "custom",
+        "renderer": "profile_image_renderer",
+        "size": [ 32,32 ],
+        "offset": [ -10, 0 ] ,
+        "layer": 2,
+        "$gamerpic_visible|default": "#none",
+        "bindings": [
+            {
+                "binding_name": "#profile_image_options"
+            },
+            {
+                "binding_name": "$gamerpic_visible",
+                "binding_name_override": "#visible"
+            }
+        ]
+    },
+
+    
+    "gamertag_bui": {
+        "type": "panel",
+        "size": [ "100%c", "100%" ],
+        "controls": [
+            {
+                "gamertag_label": {
+                    "type": "label",
+                    "color": "$main_header_text_color",
+                    "layer": 1,
+                    "locked_alpha": 0.5,
+                    "size": [ "default", "100%" ],
+                    "bindings": [
+                        {
+                            "binding_name": "#gamertag_label"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+
+    "gpic_gtag": {
+        "type": "panel",
+        "controls": [
+            {
+                "gamerpic_bui@bui_start.gamerpic_bui": {
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [10,10]
+                }
+            },
+            {
+                "gamertag_bui@bui_start.gamertag_bui": {
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "offset": [45,13]
+                }
+            }
+        ]
+    },
+
+    "show_more": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "offset": [
+            10,
+            47
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "controls": [
+            {
+                "more_button@common_toggles.light_content_toggle": {
+                    "$toggle_name": "more",
+                    "$toggle_view_binding_name": "more",
+                    "size": [32,32],
+                    "$button_content": "bui_start.NoahFix",
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left"
+                }
+            }
+        ]
+    },
+
+    "more_panel": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [
+            10,
+            56
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "more",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "settings_button@common_buttons.light_content_button": {
+                    "size": [
+                        25,
+                        25
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$button_content": "bui_start.gear_image",
+                    "$pressed_button_name": "button.menu_settings",
+                    "offset": [
+                        0,
+                        25
+                    ],
+                    "layer": 1,
+                    "$font_type": "smooth"
+                }
+            },
+            {
+                "profile_button@common_buttons.light_content_button": {
+                    "size": [
+                        25,
+                        25
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$button_content": "bui_start.profile_image",
+                    "$pressed_button_name": "button.to_profile_screen",
+                    "offset": [
+                        0,
+                        50
+                    ],
+                    "layer": 1,
+                    "$font_type": "smooth"
+                }
+            },
+            {
+                "marketplace_button@common_buttons.light_content_button": {
+                    "size": [
+                        25,
+                        25
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$button_content": "bui_start.store_home_icon",
+                    "$pressed_button_name": "button.menu_store",
+                    "offset": [
+                        0,
+                        75
+                    ],
+                    "layer": 1,
+                    "$font_type": "smooth"
+                }
+            },
+            {
+                "achievements_button@common_buttons.light_content_button": {
+                    "size": [
+                        25,
+                        25
+                    ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "$button_content": "start.achievements_icon",
+                    "$pressed_button_name": "button.menu_achievements",
+                    "offset": [
+                        0,
+                        100
+                    ],
+                    "layer": 1,
+                    "$font_type": "smooth"
+                }
+            }
+        ]
+    },
+
+    "bui_start": {
+        "type": "panel",
+        "animation_reset_name": "screen_animation_reset",
+        "anims": [
+            "@anim.screen_exit_animation_push_down",
+            "@anim.screen_exit_animation_pop_down",
+            "@anim.screen_entrance_animation_push_down",
+            "@anim.screen_entrance_animation_pop_down"
+        ],
+        "controls": [
+            {
+                "play_button@bui_start.play_button": {}
+            },
+            {
+                "show_more@bui_start.show_more": {}
+            },
+            {
+                "more_panel@bui_start.more_panel": {}
+            },
+            {
+                "paperdoll@bui_start.skin_view": {}
+            },
+            {
+                "gpic_gtag@bui_start.gpic_gtag": {}
+            },
+            {
+                "minecraft_logo@bui_start.minecraft_logo": {}
+            },
+            {
+                "bottom_texts": {
+                    "type": "panel",
+                    "controls": [
+                        {
+                            "ver@bui_start.ver": {}
+                        },
+                        {
+                            "bui@bui_start.bui": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    
+    "minecraft_logo": {
+        "type": "image",
+        "size": ["50%","50%"],
+        "offset": [0,-100],
+        "texture": "textures/ui/title"
+    },
+    "gear_image@chat.gear_image": {
+        "size": [
+            16,
+            16
+        ]
+    },
+    "profile_image": {
+        "type": "image",
+        "size": [
+            16,
+            16
+        ],
+        "texture": "textures/ui/sidebar_icons/profile_screen_icon"
+    },
+    "store_home_icon": {
+        "type": "image",
+        "size": [
+            16,
+            16
+        ],
+        "texture": "textures/ui/sidebar_icons/marketplace"
+    },
+    "achievements_icon": {
+        "type": "image",
+        "texture": "textures/ui/achievements",
+        "size": [ 16, 16 ]
+    },
+    "bui_start.NoahFix": {
+    "type": "image",
+    "texture": "textures/ui/NoahFix",
+    "size": [ 32, 32 ]
+    }
+
+}
