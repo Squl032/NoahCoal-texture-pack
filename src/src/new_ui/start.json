@@ -115,7 +115,7 @@
         "iui": {
           "type": "label",
           "layer": 515,
-          "text": "§g§lNoahCoal §dV12",
+          "text": "§g§lNoahCoal §dV11",
           "size": [ "default", 10 ],
           "offset": [ 5,-5 ],
           "max_size": [ "100%", "100%" ],
@@ -364,8 +364,8 @@
     
     "minecraft_logo": {
         "type": "image",
-        "size": ["50%","50%"],
-        "offset": [0,-100],
+        "size": ["53%","53%"],
+        "offset": [0,-130],
         "texture": "textures/ui/title"
     },
     "gear_image@chat.gear_image": {

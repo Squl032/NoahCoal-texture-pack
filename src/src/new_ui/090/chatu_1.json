@@ -1,0 +1,86 @@
+{
+  "xp_number_panel": {
+    "controls": [
+      {
+        "xp_number_label@CrisXolt_rgb_xp_number.xp_number_panel": {
+          "offset": [0, 0.5]
+        }
+      },
+      { "border_left@hud_dx.border_xp_number_label": { "offset": [-1, 0] } },
+      { "border_up@hud_dx.border_xp_number_label": { "offset": [0, -1] } },
+      { "border_down@hud_dx.border_xp_number_label": { "offset": [0, 1] } },
+      { "border_right@hud_dx.border_xp_number_label": { "offset": [1, 0] } }
+    ]
+  },
+
+  "exp_progress_bar_and_hotbar": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "rgb_xp_bar_with_hotbar@hud_dx.rgb_xp_bar_with_hotbar": {}
+          }
+        ]
+      }
+    ]
+  },
+
+  "exp_progress_bar_and_hotbar/xp_bar_with_hotbar": {
+    "ignored": "$xp_bar_in_creative_mode",
+    "controls": [
+      {
+        "experience_bar_full@CrisXolt_rgb_xp_bar.full_xp_bar_panel": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle"
+        }
+      },
+      {
+        "experience_bar_empty@CrisXolt_rgb_xp_bar.empty_xp_bar_panel": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle"
+        }
+      },
+      {
+        "progress_text_label@hud_dx.xp_number_panel": {
+          "layer": 8
+        }
+      },
+      {
+        "hotbar@hud_dx.hotbar_panel": {}
+      }
+    ]
+  },
+
+  "exp_progress_bar_and_hotbar/hotbar": {
+    "ignored": "$xp_bar_in_creative_mode"
+  },
+
+  "rgb_xp_bar_with_hotbar": {
+    "type": "panel",
+    "ignored": "(not $xp_bar_in_creative_mode)",
+    "controls": [
+      {
+        "experience_bar_full@CrisXolt_rgb_xp_bar.full_xp_bar_panel": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle"
+        }
+      },
+      {
+        "experience_bar_empty@CrisXolt_rgb_xp_bar.empty_xp_bar_panel": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle"
+        }
+      },
+      {
+        "progress_text_label@hud_dx.xp_number_panel": {
+          "layer": 8
+        }
+      },
+      {
+        "hotbar@hud_dx.hotbar_panel": {}
+      }
+    ]
+  }
+}

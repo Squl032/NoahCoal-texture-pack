@@ -1,0 +1,1 @@
+entity is for 3D shield 

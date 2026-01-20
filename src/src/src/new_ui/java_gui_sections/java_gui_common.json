@@ -1,0 +1,65 @@
+{
+  "namespace": "java_gui_common",
+
+  "text_input_java": {
+    "type": "image",
+    "texture": "textures/ui/menus/text_input_java",
+    "size": [ "100%", "100%" ]
+  },
+
+  "text_input_java_hover": {
+    "type": "image",
+    "texture": "textures/ui/menus/text_input_java_hover",
+    "size": [ "100%", "100%" ]
+  },
+
+  "text_input_java_locked": {
+    "type": "image",
+    "texture": "textures/ui/menus/text_input_java_locked",
+    "size": [ "100%", "100%" ]
+  },
+
+  "java_menu_select_grid": {
+    "type": "image",
+    "texture": "textures/ui/menus/java_menu_select_grid",
+    "size": [ 32, 32 ]
+  },
+
+  /*//// Icons ////*/
+
+  "arrow_down_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 1 ],
+    "color": "$text_color",
+    "texture": "textures/ui/icons/arrow_down"
+  },
+
+  "arrow_left_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/ui/icons/arrow_left"
+  },
+
+  "arrow_right_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/ui/icons/arrow_right"
+  },
+
+  "reset_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/ui/icons/reset"
+  }
+}

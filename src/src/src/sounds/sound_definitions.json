@@ -1,0 +1,90 @@
+{
+  "format_version": "1.20.20",
+  "sound_definitions": {
+    "ambient.weather.rain": {
+      "__use_legacy_max_distance": true,
+      "category": "weather",
+      "min_distance": 100,
+      "sounds": [
+        { "load_on_low_memory": true, "name": "sounds/ambient/weather/rain1", "volume": 0.001 },
+        { "name": "sounds/ambient/weather/rain2", "volume": 0.001 },
+        { "name": "sounds/ambient/weather/rain3", "volume": 0.001 },
+        { "name": "sounds/ambient/weather/rain4", "volume": 0.001 }
+      ]
+    },
+    "mob.sniffer.drop_seed": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/random/pop", "pitch": 0.6, "volume": 0.04 },
+        { "name": "sounds/random/pop", "pitch": 0.7, "volume": 0.04 },
+        { "name": "sounds/random/pop", "pitch": 0.8, "volume": 0.04 }
+      ]
+    },
+    "mob.sniffer.sniffsniff": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/scenting1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/scenting2", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/scenting3", "volume": 0.05 }
+      ]
+    },
+    "mob.sniffer.searching": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/searching1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching1", "volume": 0.04 },
+        { "name": "sounds/mob/sniffer/searching2", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching2", "volume": 0.04 },
+        { "name": "sounds/mob/sniffer/searching3", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching3", "volume": 0.04 },
+        { "name": "sounds/mob/sniffer/searching4", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching4", "volume": 0.04 },
+        { "name": "sounds/mob/sniffer/searching5", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching5", "volume": 0.04 },
+        { "name": "sounds/mob/sniffer/searching6", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/searching6", "volume": 0.04 }
+      ]
+    },
+    "mob.sniffer.long_sniff": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/sniffing1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/sniffing2", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/sniffing3", "volume": 0.05 }
+      ]
+    },
+    "mob.sniffer.digging": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/longdig1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/longdig2", "volume": 0.05 }
+      ]
+    },
+    "mob.sniffer.stand_up": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/digging_stop1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/digging_stop2", "volume": 0.05 }
+      ]
+    },
+    "mob.sniffer.happy": {
+      "category": "neutral",
+      "sounds": [
+        { "name": "sounds/mob/sniffer/happy1", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/happy2", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/happy3", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/happy4", "volume": 0.05 },
+        { "name": "sounds/mob/sniffer/happy5", "volume": 0.05 }
+      ]
+    },
+    "mob.critical_hit": {
+      "category": "player",
+      "min_distance": 1.0,
+      "sounds": [
+        "sounds/entity/player/attack/crit1",
+        "sounds/entity/player/attack/crit2",
+        "sounds/entity/player/attack/crit3"
+      ]
+    }
+  }
+}

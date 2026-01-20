@@ -1,0 +1,251 @@
+{
+ "namespace": "anim",
+
+ "screen_exit_size_animation_push": {
+    "anim_type": "size",
+    "easing": "out_back",
+    "duration": "$transition_time_push_size",
+    "from": [ "100%", "100%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.exit_push",
+    "reset_event": "screen_animation_reset"
+  },
+
+  "screen_exit_size_animation_pop": {
+    "anim_type": "size",
+    "easing": "out_back",
+    "duration": "$transition_time_pop_size",
+    "from": [ "100%", "100%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.exit_pop",
+    "reset_event": "screen_animation_reset"
+  },
+
+  "screen_entrance_size_animation_immediate": {
+    "anim_type": "size",
+    "easing": "out_back",
+    "duration": "$transition_time_push_size",
+    "from": [ 0, 0 ],
+    "to": [ "100%", "100%" ],
+    "resettable": false
+  },
+
+  "screen_entrance_size_animation_push@anim.screen_entrance_size_animation_immediate": {
+    "duration": "$transition_time_push",
+    "play_event": "screen.entrance_push",
+    "resettable": true
+  },
+
+  "screen_entrance_size_animation_pop@anim.screen_entrance_size_animation_immediate": {
+    "duration": "$transition_time_pop",
+    "play_event": "screen.entrance_pop",
+    "resettable": true
+  },
+
+
+
+ "screen_exit_animation_push_fade": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": "$transition_time_push",
+    "from": 1.0,
+    "to": 0.0,
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+ 
+  "screen_exit_animation_pop_fade": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": "$transition_time_pop",
+    "from": 1.0,
+    "to": 0.0,
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_entrance_animation_push_fade": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": "$transition_time_push",
+    "from": 0.0,
+    "to": 1.0,
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+
+  "screen_entrance_animation_pop_fade": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": "$transition_time_pop",
+    "from": 0.0,
+    "to": 1.0,
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+
+  
+
+  "screen_exit_animation_push_offset": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ 0, 0 ],
+    "to": [ "-25%", 0 ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_exit_animation_pop_offset": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ 0, 0 ],
+    "to": [ "25%", 0 ],
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_entrance_animation_push_offset": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ "25%", 0 ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+
+  "screen_entrance_animation_pop_offset": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ "-25%", 0 ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+
+
+  "screen_exit_animation_push_offset1": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ 0, 0 ],
+    "to": [ "25%", 0 ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_exit_animation_pop_offset1": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ 0, 0 ],
+    "to": [ "-25%", 0 ],
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_entrance_animation_push_offset1": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ "-25%", 0 ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+
+  "screen_entrance_animation_pop_offset1": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "1",
+    "from": [ "25%", 0 ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+
+
+  "screen_exit_animation_push_down": {
+    "anim_type": "offset",
+    "easing": "out_bounce",
+    "duration": "1",
+    "from": [ 0, 0 ],
+    "to": [ 0, "25%" ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_exit_animation_pop_down": {
+    "anim_type": "offset",
+    "easing": "out_bounce",
+    "duration": "0.65",
+    "from": [ 0, 0 ],
+    "to": [ 0, "25%" ],
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_entrance_animation_push_down": {
+    "anim_type": "offset",
+    "easing": "out_bounce",
+    "duration": "1.5",
+    "from": [ 0, "-25%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+
+  "screen_entrance_animation_pop_down": {
+    "anim_type": "offset",
+    "easing": "out_bounce",
+    "duration": "1.5",
+    "from": [ 0, "-25%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+
+
+  "screen_exit_animation_push_up": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "$transition_time_push",
+    "from": [ 0, 0 ],
+    "to": [ 0, "-25%" ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_exit_animation_pop_up": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "$transition_time_pop",
+    "from": [ 0, 0 ],
+    "to": [ 0, "-25%" ],
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  },
+
+  "screen_entrance_animation_push_up": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "$transition_time_push",
+    "from": [ 0, "25%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+
+  "screen_entrance_animation_pop_up": {
+    "anim_type": "offset",
+    "easing": "out_back",
+    "duration": "$transition_time_pop",
+    "from": [ 0, "25%" ],
+    "to": [ 0, 0 ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  }
+}

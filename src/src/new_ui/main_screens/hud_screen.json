@@ -1,0 +1,63 @@
+{
+  "xp_number_panel": {
+    "controls": [
+      {
+        "xp_number_label@CrisXolt_rgb_xp_number.xp_number_panel": {
+          "offset": [0, 0.5]
+        }
+      },
+      /* 4 directions about borders */
+      {
+        "border_left@hud_dx.border_xp_number_label": {
+          "offset": [-1, 0]
+        }
+      },
+      {
+        "border_up@hud_dx.border_xp_number_label": {
+          "offset": [0, -1]
+        }
+      },
+      {
+        "border_down@hud_dx.border_xp_number_label": {
+          "offset": [0, 1]
+        }
+      },
+      {
+        "border_right@hud_dx.border_xp_number_label": {
+          "offset": [1, 0]
+        }
+      }
+    ]
+  },
+  "exp_progress_bar_and_hotbar/xp_bar": {
+    "controls": [
+      {
+        "experience_bar_full@CrisXolt_rgb_xp_bar.full_xp_bar_panel": {}
+      },
+      {
+        "experience_bar_empty@CrisXolt_rgb_xp_bar.empty_xp_bar_panel": {}
+      },
+      {
+        "progress_text_label@hud_dx.xp_number_panel": {
+          "layer": 8
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$xp_bar_binding",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "(not $xp_bar_in_creative_mode)",
+        "$xp_bar_binding": "#is_not_creative_mode"
+      },
+      {
+        "requires": "$xp_bar_in_creative_mode",
+        "$xp_bar_binding": null
+      }
+    ]
+  }
+}
