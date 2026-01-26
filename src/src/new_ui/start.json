@@ -18,7 +18,7 @@
         {
             "paper_doll_panel": {
             "type": "panel",
-            "size": [ "100%", "100%" ],
+            "size": [ "120%", "120%" ],
             "animation_reset_name": "screen_animation_reset",
             "anims": [
                 "@anim.screen_exit_animation_push_down",
@@ -53,7 +53,8 @@
             "layer": 15,
             "anchor_from": "top_middle",
             "anchor_to": "bottom_middle",
-            "size": [ 8, 8 ],
+            "size": [ 10, 10 ],
+            "offset": [ 0, -20 ],
             "animation_reset_name": "screen_animation_reset",
             "anims": [
                 "@anim.screen_exit_animation_push_down",
@@ -70,7 +71,7 @@
         }
         ]
     },
-
+    
     "ver": {
         "type": "panel",
         "animation_reset_name": "screen_animation_reset",
@@ -88,7 +89,7 @@
             "text": "#version",
             "size": [ "default", 10 ],
             "offset": [ -5 , -5 ],
-            "max_size": [ "100%", "100%" ],
+            "max_size": [ "60%", "60%" ],
             "anchor_from": "bottom_right",
             "anchor_to": "bottom_right",
             "bindings": [
@@ -115,10 +116,10 @@
         "iui": {
           "type": "label",
           "layer": 515,
-          "text": "§g§lNoahCoal §dV10",
+          "text": "§g§lNoahCoal §dV12",
           "size": [ "default", 10 ],
           "offset": [ 5,-5 ],
-          "max_size": [ "100%", "100%" ],
+          "max_size": [ "60%", "60%" ],
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left"
         }
@@ -131,7 +132,7 @@
         "$button_text": "menu.play",
         "$focus_override_right": "profile_button",
         "default_focus_precedence": 1,
-        "size": [ "20%", "10%"],
+        "size": [ "40%", "10%"],
         "offset": [ 0, "30%"],
         "layer": 16
     },
@@ -364,8 +365,8 @@
     
     "minecraft_logo": {
         "type": "image",
-        "size": ["53%","53%"],
-        "offset": [0,-130],
+        "size": ["40%","40%"],
+        "offset": [0,-160],
         "texture": "textures/ui/title"
     },
     "gear_image@chat.gear_image": {

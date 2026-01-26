@@ -2,8 +2,8 @@
     "format_version": 2,
     "header": {
         "description": "§eThe Mixed texture pack §dcollected by §bNoahCoal",
-        "name": "§aNoahCoal's §dtexture §c§o§lV11§r§n§n (hotfix v1)",
-        "uuid": "694bc6fc-beb3-435d-8d69-8262d889ef7f",
+        "name": "§aNoahCoal's §dtexture §c§o§lV12§r§n§n (hotfix v1)",
+        "uuid": "b582db49-e450-4281-8292-a2b4de630862",
         "version": [
             1,
             11,
@@ -22,7 +22,7 @@
         {
             "description": "§eThe Mixed texture pack §dcollected by §bNoahCoal",
             "type": "resources",
-            "uuid": "493628bc-af0e-4dec-8c15-7ebf1c4aa3ff",
+            "uuid": "6558be39-4796-42a7-90bd-746d65ea74b8",
             "version": [
                 1,
                 11,
@@ -39,11 +39,6 @@
         {
             "folder_name": "Smooth",
             "name": "Smooth",
-            "memory_tier": 1
-        },
-        {
-            "folder_name": "font_smooth1",
-            "name": "font_smooth1",
             "memory_tier": 1
         },
         {
@@ -69,6 +64,11 @@
         {
             "folder_name": "background_1",
             "name": "background_1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "font_smooth1",
+            "name": "font_smooth1",
             "memory_tier": 1
         }
     ]
