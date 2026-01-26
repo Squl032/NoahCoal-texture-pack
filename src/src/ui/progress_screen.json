@@ -1,0 +1,265 @@
+{
+   "namespace":"progress",
+   //add from old json
+   "modal_progress_screen@progress_screen": {
+    "$screen_bg_content": "common.setwarp_screen"
+  },
+  "delete_progress_screen@modal_progress_screen": {
+    "$screen_bg_content": "common.setwarp_screen"
+  },
+  "world_loading_progress_screen@progress_screen": {
+    "$screen_bg_content": "common.setwarp_screen"
+  },
+  "overworld_loading_progress_screen@world_loading_progress_screen": {
+    "$screen_bg_content": "common.world_screen"
+  },
+  "nether_loading_progress_screen@world_loading_progress_screen": {
+    "$screen_bg_content": "common.nether_screen"
+  },
+  "theend_loading_progress_screen@world_loading_progress_screen": {
+    "$screen_bg_content": "common.end_screen"
+  },
+  "world_saving_progress_screen@progress_screen": {
+    "$screen_bg_content": "common.setwarp_screen"
+  },
+  "world_convert_modal_progress_screen@progress.progress_screen": {
+    "$screen_bg_content": "common.setwarp_screen"
+  },
+  "dimension_loading_screen_base@common.empty_panel":{
+    "controls":[
+      {
+        "screen_text":{
+          "type":"label",
+          "text":"$dimension_screen_text",
+          "font_type":"Smooth",
+          "font_scale_factor":3.5,
+          "shadow":true,
+          "force_render_below":true,
+          "anchor_from":"center",
+          "anchor_to":"center",
+          "offset":[ 0, 10 ]
+        }
+      },
+      {
+        "screen_title@common_art.title_panel_content":{
+          "$splash_text_visible":false
+        }
+      },
+      {
+        "progress_title_text@progress.progress_title_text":{
+          "font_type":"Smooth",
+          "font_scale_factor":1.2,
+          "shadow":true,
+          "anchor_from":"bottom_left",
+          "anchor_to":"bottom_left",
+          "offset":[ 29.5, -21 ]
+        }
+      },
+      {
+        "progress_bar_text@progress.progress_bar_text":{
+          "localize":false,
+          "shadow":true,
+          "max_size":[ "100% - 65px", 40 ],
+          "anchor_from":"bottom_left",
+          "anchor_to":"bottom_left",
+          "offset":[ 30, -6 ]
+        }
+      },
+      {
+        "loading_tool_animation@persona_common.loading_icon":{
+          "anchor_from":"center",
+          "anchor_to":"center",
+          "offset":[ 0, 60 ],
+          "size":[ 60, 60 ]
+        }
+      },
+      {
+        "fancy_progress_loading_bars@progress.fancy_progress_loading_bars":{
+          "anchor_from":"bottom_middle",
+          "anchor_to":"bottom_middle",
+          "offset":[ 0, 0 ],
+          "size":[ "90%", 5 ],
+          "bindings":[]
+        }
+      },
+      {
+        "loading_exp_bar_percentage@progress.loading_exp_bar_percentage":{}
+      }
+    ]
+  },
+
+
+
+
+  "progress_screen@common.base_screen":{
+      "button_mappings":[
+         {
+            "from_button_id":"button.menu_cancel",
+            "to_button_id":"button.menu_exit",
+            "mapping_type":"global"
+         }
+      ]
+   },
+   "bottom_cancel_button@common_buttons.light_text_button":{
+      "$pressed_button_name":"button.menu_exit",
+      "$button_text":"gui.cancel",
+      "size":["100%","100%"],
+      "bindings":[
+         {
+            "binding_name":"#cancel_visible",
+            "binding_name_override":"#visible"
+         }
+      ]
+   },
+   "world_convert_modal_progress_screen_content":{
+      "type":"panel",
+      "layer":3,
+      "controls":[
+         {
+            "world_modal_progress_panel@progress.world_modal_progress_panel":{
+               
+            }
+         },
+         {
+            "popup_dialog_factory@progress.popup_dialog_factory":{
+               
+            }
+         }
+      ]
+   },
+
+
+   
+   "world_save_modal_progress_screen_content":{
+      "type":"panel",
+      "controls":[
+         {
+            "world_modal_progress_panel@progress.world_modal_progress_panel":{
+               
+            }
+         },
+         {
+            "save_@progress.auto_save":{
+               "offset":[
+                  0,
+                  55
+               ]
+            }
+         },
+         {
+            "popup_dialog_factory@progress.popup_dialog_factory":{
+               
+            }
+         }
+      ]
+   },
+
+   "new_loading_animation": {
+      "anim_type": "flip_book",
+      "initial_uv": [ 0, 0 ],
+      "frame_count": 8,
+      "frame_step": 8,
+      "fps": 8,
+      "reversible": true,
+      "easing": "linear"
+    },
+
+   "world_modal_progress_panel":{
+      "type":"panel",
+      "size":[
+         "100%",
+         "100%"
+      ],
+      "variables":[
+         {
+            "requires":"$desktop_screen",
+            "$button_state_default_base":"common.button_state_default",
+            "$button_state_hover_base":"common.button_state_hover",
+            "$button_state_pressed_base":"common.button_state_pressed"
+         },
+         {
+            "requires":"$pocket_screen",
+            "$button_state_default_base":"common-classic.button_state_default",
+            "$button_state_hover_base":"common-classic.button_state_hover",
+            "$button_state_pressed_base":"common-classic.button_state_pressed"
+         }
+      ],
+      "controls":[
+         {
+            "loading":{
+               "type":"panel",
+               "size":[
+                  "100%",
+                  "50%c"
+               ],
+               "controls":[
+                  {
+                     "loading_text": {
+                        "type": "label",
+                        "text": "Please wait...",
+                        "font_type": "Smooth",
+                        "offset": [ 0, -60 ]
+                  }
+                     },
+                  {
+                    "new_loading": {
+                      "type": "image",
+                      "texture": "textures/ui/progress_screen/loading.png",
+                      "offset": [0, -10 ],
+                      "size": [ 75, 75 ],
+                      "uv_size": [ 20, 20 ],
+                      "uv": "@new_loading_animation",
+                      "disable_anim_fast_forward": true,
+                      "layer": 1
+                     }
+                  }
+               ]
+            }
+         },
+         {
+            "spacer_0":{
+               "type":"panel",
+               "size":[
+                  0,
+                  5
+               ]
+            }
+         },
+         {
+            "spacer_1":{
+               "type":"panel",
+               "size":[
+                  0,
+                  5
+               ],
+               "bindings":[
+                  {
+                     "binding_name":"#cancel_visible",
+                     "binding_name_override":"#visible"
+                  }
+               ]
+            }
+         },
+         {
+            "cancel_button":{
+               "type":"panel",
+               "size":["100%","100%c"],
+               "controls":[
+                  {
+                     "modal_button_panel@progress.bottom_cancel_button":{
+                        "size":[
+                           170,
+                           21
+                        ],
+                        "offset":[
+                           0,
+                           55
+                        ]
+                     }
+                  }
+               ]
+            }
+         }
+      ]
+   }
+}
