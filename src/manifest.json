@@ -1,0 +1,70 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§eThe Mixed texture pack §dcollected by §bNoahCoal",
+        "name": "§aNoahCoal's §dtexture §c§o§lV12",
+        "uuid": "694bc6fc-beb3-435d-8d69-8262d889ef7f",
+        "version": [
+            1,
+            11,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            0
+        ],
+        "author": "NoahCoal",
+        "license": "All Rights Reserved",
+        "in_game_author": "NoahCoal"
+    },
+    "modules": [
+        {
+            "description": "§eThe Mixed texture pack §dcollected by §bNoahCoal",
+            "type": "resources",
+            "uuid": "493628bc-af0e-4dec-8c15-7ebf1c4aa3ff",
+            "version": [
+                1,
+                11,
+                1
+            ]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "Souls",
+            "name": "Souls",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "font_smooth1",
+            "name": "font_smooth1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Font_Modern",
+            "name": "Font_Modern",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "GTA V",
+            "name": "GTA V",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "bg",
+            "name": "bg",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "bg_1",
+            "name": "bg_1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "background_1",
+            "name": "background_1",
+            "memory_tier": 1
+        }
+    ]
+}
