@@ -1,0 +1,77 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§eNoahCoal §awith §gJeffery Epstein §ctexture §apack §ev12",
+        "name": "§eNoahCoal §awith §gJeffery Epstein",
+        "uuid": "b582db49-e450-4281-8292-a2b4de630862",
+        "version": [
+            1,
+            11,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            0
+        ],
+        "author": "NoahCoal",
+        "license": "All Rights Reserved",
+        "in_game_author": "NoahCoal"
+    },
+    "modules": [
+        {
+            "description": "§eNoahCoal §awith §gJeffery Epstein §ctexture §apack §ev12",
+            "type": "resources",
+            "uuid": "6558be39-4796-42a7-90bd-746d65ea74b8",
+            "version": [
+                1,
+                11,
+                1
+            ]
+        }
+    ],
+    "subpacks": [
+        
+        {
+            "folder_name": "Jeffery Epstein",
+            "name": "Jeffery Epstein",
+            "memory_tier": 1
+        },
+        //add new epstein
+        {
+            "folder_name": "Souls",
+            "name": "Souls",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Smooth",
+            "name": "Smooth",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Font_Modern",
+            "name": "Font_Modern",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "GTA V",
+            "name": "GTA V",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "bg_1",
+            "name": "bg_1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "background_1",
+            "name": "background_1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "font_smooth1",
+            "name": "font_smooth1",
+            "memory_tier": 1
+        }
+    ]
+}
