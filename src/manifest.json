@@ -1,15 +1,11 @@
 {
     "format_version": 2,
     "header": {
-<<<<<<< HEAD
+
         "description": "§eNoahCoal §awith §gJeffery Epstein §ctexture §apack §ev12",
         "name": "§eNoahCoal §awith §gJeffery Epstein",
         "uuid": "b582db49-e450-4281-8292-a2b4de630862",
-=======
-        "description": "§eThe Mixed texture pack §dcollected by §bNoahCoal",
-        "name": "§aNoahCoal's §dtexture §c§o§lV12",
-        "uuid": "694bc6fc-beb3-435d-8d69-8262d889ef7f",
->>>>>>> 676fab10e27d83ee2cfe3becb1315182824b7974
+
         "version": [
             1,
             11,
