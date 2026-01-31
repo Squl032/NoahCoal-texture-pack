@@ -39,15 +39,20 @@
             "name": "Jeffery Epstein",
             "memory_tier": 1
         },
-        //add new epstein
+        //add new epstein here
         {
-            "folder_name": "Souls",
-            "name": "Souls",
+            "folder_name": "bg_1",
+            "name": "bg_1",
             "memory_tier": 1
         },
         {
-            "folder_name": "font_smooth1",
-            "name": "font_smooth1",
+            "folder_name": "background_1",
+            "name": "background_1",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "Souls",
+            "name": "Souls",
             "memory_tier": 1
         },
         {
@@ -61,13 +66,8 @@
             "memory_tier": 1
         },
         {
-            "folder_name": "bg_1",
-            "name": "bg_1",
-            "memory_tier": 1
-        },
-        {
-            "folder_name": "background_1",
-            "name": "background_1",
+            "folder_name": "font_smooth1",
+            "name": "font_smooth1",
             "memory_tier": 1
         }
     ]
