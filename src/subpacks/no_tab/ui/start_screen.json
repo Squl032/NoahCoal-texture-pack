@@ -1,0 +1,8 @@
+{
+  "namespace": "start",
+
+   "start_screen@common.base_screen": {
+    "$screen_content": "bui_start.bui_start",
+    "$screen_bg_content": "common.start_screen"
+  }
+}

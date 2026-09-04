@@ -1,0 +1,11 @@
+
+{
+//tab or F10
+  "$playerlist_key|default": "CapsLock" ,
+//chat  UI
+  "$main_menu_button_default_color": [ 0.87, 0.87, 0.87 ],
+  "$main_menu_button_hover_color": [ 1.0, 1.0, 1.0 ], 
+  "$main_menu_button_preesed_color": [ 1.0, 1.0, 1.0 ], 
+  "$main_menu_button_locked_color": [ 0.62, 0.62, 0.62 ],  
+  "$chat_size": [ "40%", 180 ]
+}

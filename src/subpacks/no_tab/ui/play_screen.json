@@ -1,0 +1,7 @@
+{
+  "namespace": "play",
+
+  "play_screen@common.base_screen": {
+    "$screen_bg_content": "common.play_screen"
+  }
+}

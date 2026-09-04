@@ -69,6 +69,11 @@
             "folder_name": "font_smooth1",
             "name": "font_smooth1",
             "memory_tier": 1
+        },
+        {
+            "folder_name": "no_tab",
+            "name": "no_tab",
+            "memory_tier": 1
         }
     ]
 }

@@ -1,0 +1,7 @@
+{
+  "namespace": "credits",
+
+  "credits_screen@common.base_screen": {
+    "$screen_bg_content": "common.credit_screen"
+  }
+}
